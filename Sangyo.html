@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sangyo Research | Strategic Market Intelligence</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+header img { height:55px; }
+
+nav a {
+    color:white;
+    margin-left:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover { color:#00A86B; }
+
+.hero {
+    height:100vh;
+    background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+    url('https://images.unsplash.com/photo-1460925895917-afdab827c52f');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1 {
+    font-size:55px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero p {
+    font-size:20px;
+    max-width:700px;
+    opacity:0.8;
+}
+
+.section {
+    padding:100px 60px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section h2 {
+    text-align:center;
+    margin-bottom:60px;
+    font-size:38px;
+}
+
+.services {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+}
+
+.card {
+    background:#1e293b;
+    padding:40px;
+    border-radius:12px;
+    transition:0.4s;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+    transform:translateY(-8px);
+    border:1px solid #00A86B;
+}
+
+.card h3 {
+    margin-bottom:15px;
+    color:#00A86B;
+}
+
+.stats {
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    padding:80px 20px;
+    background:#111827;
+}
+
+.stat h3 {
+    font-size:40px;
+    color:#00A86B;
+}
+
+.cta {
+    background:#00A86B;
+    text-align:center;
+    padding:80px 20px;
+    color:white;
+}
+
+.cta button {
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    background:#0f172a;
+    color:white;
+    font-weight:600;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer {
+    background:#0b1120;
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Sangyo Research Logo">
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Data. Insight. Market Leadership.</h1>
+    <p>Empowering businesses with advanced marketing research, analytics, and strategic intelligence.</p>
+</section>
+
+<section class="section" id="about">
+    <h2>About Sangyo Research</h2>
+    <p style="text-align:center;max-width:800px;margin:auto;opacity:0.8;">
+        Sangyo Research delivers enterprise-level market intelligence,
+        customer behavior analytics, and strategic consulting that
+        transforms data into measurable business growth.
+    </p>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Core Services</h2>
+    <div class="services">
+
+        <div class="card">
+            <h3>Market Intelligence</h3>
+            <p>Advanced industry analysis and competitive benchmarking.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consumer Insights</h3>
+            <p>Behavioral research through surveys, segmentation & modeling.</p>
+        </div>
+
+        <div class="card">
+            <h3>Predictive Analytics</h3>
+            <p>Forecast trends and optimize strategic decision-making.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <h3>250+</h3>
+        <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+        <h3>98%</h3>
+        <p>Client Satisfaction</p>
+    </div>
+    <div class="stat">
+        <h3>15+</h3>
+        <p>Industries Served</p>
+    </div>
+</section>
+
+<section class="cta" id="contact">
+    <h2>Ready to Transform Your Market Strategy?</h2>
+    <button>Contact Sangyo Research</button>
+</section>
+
+<footer>
+    © 2026 Sangyo Research | Strategic Market Intelligence
+</footer>
+
+</body>
+</html>
